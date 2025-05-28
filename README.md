@@ -43,7 +43,7 @@
 
 Click the button below to fork:
 
-  <a href="https://github.com/Tappy-Black/Xtreme-AI/fork"><img title="XTREME-TECH_X" src="https://img.shields.io/badge/FORK-XTREME-TECHX-h?color=green&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/Tappy-Black/Xtreme-AI/fork"><img title="XTREME-TECH_X" src="https://img.shields.io/badge/FORK-XTREME TECHX-h?color=green&style=for-the-badge&logo=stackshare"></a>
 
 ## ɢᴇᴛ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ
   <p align="left">  
