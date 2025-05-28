@@ -36,7 +36,7 @@
 </div>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=XTREME_TECH_X&label=VISITORS&style=flat-square&color=0002FF" />
+  <img src="https://komarev.com/ghpvc/?username=XTREME TECH X&label=VISITORS&style=flat-square&color=0002FF" />
 </p>
 
 ### 1. Fork This Repository
