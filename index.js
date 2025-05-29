@@ -92,7 +92,7 @@ async function updateBio(Matrix) {
     const time = now.format('HH:mm:ss');
     const randomIndex = Math.floor(Math.random() * lifeQuotes.length);
     const randomQuote = lifeQuotes[randomIndex];
-    const bio = `🧋ᴘᴏᴘᴋɪᴅ xᴍᴅ ɪs ᴀᴄᴛɪᴠᴇ🧋ᴀᴛ ${time} | ${randomQuote}`;
+    const bio = `✨🌇 𝐱Եґ℮м℮-Ե℮𝖈𝖍_𝐱 𝐈s 𝐀cԵíѵҽ✨ 🟢 | ⏳𝐀Ե ${time} 📸 | 💬🌆 ${randomQuote}`;
     await Matrix.updateProfileStatus(bio);
     console.log(chalk.yellow(`ℹ️ Bio updated to: "${bio}"`));
   } catch (error) {
@@ -104,7 +104,7 @@ async function updateLiveBio(Matrix) {
   try {
     const now = moment().tz('Africa/Nairobi');
     const time = now.format('HH:mm:ss');
-    const bio = `🧋ᴘᴏᴘᴋɪᴅ xᴍᴅ ɪs ᴀᴄᴛɪᴠᴇ🧋ᴀᴛ ${time}`;
+    const bio = `✨🌇 𝐱Եґ℮м℮-Ե℮𝖈𝖍_𝐱 𝐈s 𝐀cԵíѵҽ✨ 🟢 | ⏳𝐀Ե ${time} 📸 | 💬🌆`;
     await Matrix.updateProfileStatus(bio);
   } catch (error) {
     console.error(chalk.red('Failed to update live bio:'), error);
@@ -115,20 +115,20 @@ async function start() {
   try {
     const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
     const { version, isLatest } = await fetchLatestBaileysVersion();
-    console.log(`POPKID md using WA v${version.join('.')}, isLatest: ${isLatest}`);
+    console.log(`XTREME md using WA v${version.join('.')}, isLatest: ${isLatest}`);
 
     const Matrix = makeWASocket({
       version,
       logger: pino({ level: 'silent' }),
       printQRInTerminal: useQR,
-      browser: ["popkid", "safari", "3.3"],
+      browser: ["Xtreme-Tech_X", "safari", "3.3"],
       auth: state,
       getMessage: async (key) => {
         if (store) {
           const msg = await store.loadMessage(key.remoteJid, key.id);
           return msg?.message || undefined;
         }
-        return { conversation: "popkid md whatsapp user bot" };
+        return { conversation: "xtreme md whatsapp user bot" };
       }
     });
 
@@ -140,24 +140,24 @@ async function start() {
         }
       } else if (connection === 'open') {
         if (initialConnection) {
-          console.log(chalk.green("✔️ ᴘᴏᴘᴋɪᴅ ᴍᴅ ɪs ɴᴏᴡ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴘᴏᴡᴇʀᴇᴅ ᴜᴘ"));
+          console.log(chalk.green("✔️ xᴛʀᴇᴍᴇ-ᴛᴇᴄʜ_x ɪs ɴᴏᴡ ᴏɴʟɪɴᴇ ᴀɴᴅ ᴘᴏᴡᴇʀᴇᴅ ᴜᴘ"));
           await updateBio(Matrix);
-          const image = { url: "https://files.catbox.moe/nk71o3.jpg" };
-          const caption = `╭━━ *『 ᴘᴏᴘᴋɪᴅ xᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ 』*
+          const image = { url: "https://files.catbox.moe/og4tsk.jpg" };
+          const caption = `╭━━ *『 𝐱Եґ℮м℮-Ե℮𝖈𝖍__𝐱 𝕮𝔬𝔫𝔫𝔢𝔠𝔣𝔢d 』*
 
 ┃
-┃ |⚡| ʙᴏᴛ ɴᴀᴍᴇ: ᴘᴏᴘᴋɪᴅ xᴍᴅ
-┃ |👑| ᴏᴡɴᴇʀ: ᴘᴏᴘᴋɪᴅ
+┃ |⚡| ʙᴏᴛ ɴᴀᴍᴇ: 𝐱Եґ℮м℮-Ե℮𝖈𝖍__𝐱
+┃ |👑| ᴏᴡɴᴇʀ: ʙʟᴀᴄᴋ-ᴛᴀᴘᴘʏ
 ┃ |⚙️| ᴍᴏᴅᴇ: ${config.MODE}
 ┃ |🎯| ᴘʀᴇꜰɪx: ${config.PREFIX}
 ┃ |✅| ꜱᴛᴀᴛᴜꜱ: ᴏɴʟɪɴᴇ & ꜱᴛᴀʙʟᴇ
 ┃
 ╰━━━━━━━━━━━━━━━━━━━╯
 
-ɪᴛs ʏᴏᴜ,ᴍᴇ,ᴜs🧋🩷.
+ɢᴇᴛ_ʀɪɢʜᴛ_ᴡɪᴛᴄʜᴀ🎀🩷
 
 ╭──────────────────
-│ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ
+│ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙʟᴀᴄᴋ-ᴛᴀᴘᴘʏ
 ╰──────────────────
 🔗 Follow my WhatsApp Channel: ${whatsappChannelLink}`;
 
@@ -169,13 +169,13 @@ async function start() {
               forwardingScore: 999,
               forwardedNewsletterMessageInfo: {
                 newsletterJid: whatsappChannelId,
-                newsletterName: "popkid xmd ʙᴏᴛ",
+                newsletterName: "𝐱Եґ℮м℮-Ե℮𝖈𝖍__𝐱",
                 serverMessageId: -1,
               },
               externalAdReply: {
-                title: "ᴘᴏᴘᴋɪᴅ xᴍᴅ ʙᴏᴛ",
-                body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
-                thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
+                title: "𝐱Եґ℮м℮-Ե℮𝖈𝖍__𝐱",
+                body: "𝕻𝖔𝖜𝖊𝖗𝖊𝖉 Ⴊ𝐲 Ⴊ𝖑𝖆𝖈𝖐-Ե𝖆𝖕𝖕𝐲",
+                thumbnailUrl: 'https://files.catbox.moe/og4tsk.jpg',
                 sourceUrl: whatsappChannelLink,
                 mediaType: 1,
                 renderLargerThumbnail: false,
