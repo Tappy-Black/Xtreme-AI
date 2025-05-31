@@ -5,7 +5,7 @@
 import config from '../../config.cjs';  // Your bot configuration
 
 // Global variable to track the statuslike state
-let statusLikeEnabled = false;
+let statusLikeEnabled = true;
 
 // Function to set bot status
 const setBotStatus = async (sock, status) => {
