@@ -27,7 +27,7 @@ const repo = async (m, sock) => {
 │ 👑 *Owner*: Black-Tappy 
 │ ⭐ *Stars*: \`${data.stargazers_count}\` 
 │ ⑂ *Forks*: \`${data.forks_count}\`  
-│ 🔗 *URL*: ${repoUrl}
+│ 🔗 *URL*: https://whatsapp.com/channel/0029VasHgfG4tRrwjAUyTs10
 │
 │ 📝 *Description*:
 │ 🤝 *Join the Community!* 
